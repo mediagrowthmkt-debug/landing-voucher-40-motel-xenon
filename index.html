@@ -6,18 +6,25 @@
     <meta name="description" content="Voucher de 40 reais para consumo no Motel Xenon Criciúma - Suítes de luxo com hidromassagem. Reserve agora via WhatsApp!">
     <meta name="keywords" content="motel criciúma, motel perto de mim, motel xenon, voucher motel, promoção motel criciúma">
     <meta name="theme-color" content="#D91518">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" as="style">
+    <link rel="preload" href="rsc/videomotel.mp4" as="video" type="video/mp4">
+    
     <title>Voucher de 40 reais para consumo | Motel Xenon Criciúma</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="../motel-criciuma/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
     
-    <!-- Google Fonts -->
+    <!-- Google Fonts - optimized -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap" rel="stylesheet"></noscript>
     
-    <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) - async optimized -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17435400574"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -50,21 +57,27 @@
         })(window, document, "clarity", "script", "ufylh2txkm");
     </script>
     
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Critical CSS inline -->
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:Montserrat,sans-serif;background:#0a0a0a;overflow-x:hidden;height:100vh}.header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(0,0,0,.8);backdrop-filter:blur(10px);padding:15px 0;border-bottom:1px solid rgba(217,21,24,.3);min-height:80px}.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+    </style>
+    
+    <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="header">
         <div class="container">
-            <img src="images/logo.png" alt="Motel Xenon" class="logo" width="180" height="54">
+            <img src="images/logo.png" alt="Motel Xenon" class="logo" width="180" height="54" loading="eager" fetchpriority="high">
         </div>
     </header>
 
     <!-- HERO SECTION -->
     <main class="hero">
         <div class="hero-background">
-            <video autoplay muted loop playsinline class="hero-video">
+            <video autoplay muted loop playsinline class="hero-video" preload="metadata" poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
                 <source src="rsc/videomotel.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
@@ -74,49 +87,49 @@
         <div class="hero-marquee-container">
             <div class="hero-marquee">
                 <div class="hero-marquee-track">
-                    <img src="images/suite-hidro-grande.jpg" alt="Suíte com Hidromassagem" loading="lazy">
-                    <img src="images/suite-cama-luz-azul.jpg" alt="Suíte Luxuosa" loading="lazy">
-                    <img src="images/casal-hidro2.jpg" alt="Casal Relaxando" loading="lazy">
-                    <img src="images/suite-hidro-petalas.jpg" alt="Hidromassagem Romântica" loading="lazy">
-                    <img src="images/suite-cama-luz-teto.jpg" alt="Suíte com Iluminação" loading="lazy">
-                    <img src="images/suite-hidro-vermelha.jpg" alt="Hidromassagem Vermelha" loading="lazy">
-                    <img src="images/suite-luz-azul2.jpg" alt="Suíte Azul" loading="lazy">
-                    <img src="images/cafe-da-manha.jpg" alt="Café da Manhã" loading="lazy">
-                    <img src="images/suite-cama-madeira.jpg" alt="Suíte Moderna" loading="lazy">
-                    <img src="images/suite-hidro-decoracao.jpg" alt="Decoração Romântica" loading="lazy">
-                    <img src="images/suite-cama-luz-ambiente.jpg" alt="Ambiente Aconchegante" loading="lazy">
-                    <img src="images/suite-hidro-mesa.jpg" alt="Suíte Completa" loading="lazy">
-                    <img src="images/espumante-gelo.jpg" alt="Espumante Gelado" loading="lazy">
-                    <img src="images/suite-luz-azul.jpg" alt="Iluminação Ambiente" loading="lazy">
-                    <img src="images/suite-cama-luz-teto2.jpg" alt="Suíte Premium" loading="lazy">
-                    <img src="images/tacas-espumante.jpg" alt="Taças de Espumante" loading="lazy">
-                    <img src="images/suite-hidro-mulher.jpg" alt="Relaxamento Total" loading="lazy">
-                    <img src="images/suite-mesa-tv.jpg" alt="Conforto Completo" loading="lazy">
-                    <img src="images/banheiro-hidro.jpg" alt="Banheiro Luxuoso" loading="lazy">
-                    <img src="images/suite-cama-luz-verde.jpg" alt="Suíte Verde" loading="lazy">
+                    <img src="images/suite-hidro-grande.jpg" alt="Suíte com Hidromassagem" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-azul.jpg" alt="Suíte Luxuosa" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/casal-hidro2.jpg" alt="Casal Relaxando" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-petalas.jpg" alt="Hidromassagem Romântica" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-teto.jpg" alt="Suíte com Iluminação" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-vermelha.jpg" alt="Hidromassagem Vermelha" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-luz-azul2.jpg" alt="Suíte Azul" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/cafe-da-manha.jpg" alt="Café da Manhã" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-madeira.jpg" alt="Suíte Moderna" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-decoracao.jpg" alt="Decoração Romântica" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-ambiente.jpg" alt="Ambiente Aconchegante" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-mesa.jpg" alt="Suíte Completa" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/espumante-gelo.jpg" alt="Espumante Gelado" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-luz-azul.jpg" alt="Iluminação Ambiente" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-teto2.jpg" alt="Suíte Premium" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/tacas-espumante.jpg" alt="Taças de Espumante" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-mulher.jpg" alt="Relaxamento Total" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-mesa-tv.jpg" alt="Conforto Completo" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/banheiro-hidro.jpg" alt="Banheiro Luxuoso" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-verde.jpg" alt="Suíte Verde" loading="lazy" width="200" height="120" decoding="async">
                 </div>
                 <!-- Duplicar para loop contínuo -->
                 <div class="hero-marquee-track" aria-hidden="true">
-                    <img src="images/suite-hidro-grande.jpg" alt="Suíte com Hidromassagem" loading="lazy">
-                    <img src="images/suite-cama-luz-azul.jpg" alt="Suíte Luxuosa" loading="lazy">
-                    <img src="images/casal-hidro2.jpg" alt="Casal Relaxando" loading="lazy">
-                    <img src="images/suite-hidro-petalas.jpg" alt="Hidromassagem Romântica" loading="lazy">
-                    <img src="images/suite-cama-luz-teto.jpg" alt="Suíte com Iluminação" loading="lazy">
-                    <img src="images/suite-hidro-vermelha.jpg" alt="Hidromassagem Vermelha" loading="lazy">
-                    <img src="images/suite-luz-azul2.jpg" alt="Suíte Azul" loading="lazy">
-                    <img src="images/cafe-da-manha.jpg" alt="Café da Manhã" loading="lazy">
-                    <img src="images/suite-cama-madeira.jpg" alt="Suíte Moderna" loading="lazy">
-                    <img src="images/suite-hidro-decoracao.jpg" alt="Decoração Romântica" loading="lazy">
-                    <img src="images/suite-cama-luz-ambiente.jpg" alt="Ambiente Aconchegante" loading="lazy">
-                    <img src="images/suite-hidro-mesa.jpg" alt="Suíte Completa" loading="lazy">
-                    <img src="images/espumante-gelo.jpg" alt="Espumante Gelado" loading="lazy">
-                    <img src="images/suite-luz-azul.jpg" alt="Iluminação Ambiente" loading="lazy">
-                    <img src="images/suite-cama-luz-teto2.jpg" alt="Suíte Premium" loading="lazy">
-                    <img src="images/tacas-espumante.jpg" alt="Taças de Espumante" loading="lazy">
-                    <img src="images/suite-hidro-mulher.jpg" alt="Relaxamento Total" loading="lazy">
-                    <img src="images/suite-mesa-tv.jpg" alt="Conforto Completo" loading="lazy">
-                    <img src="images/banheiro-hidro.jpg" alt="Banheiro Luxuoso" loading="lazy">
-                    <img src="images/suite-cama-luz-verde.jpg" alt="Suíte Verde" loading="lazy">
+                    <img src="images/suite-hidro-grande.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-azul.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/casal-hidro2.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-petalas.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-teto.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-vermelha.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-luz-azul2.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/cafe-da-manha.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-madeira.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-decoracao.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-ambiente.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-mesa.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/espumante-gelo.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-luz-azul.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-teto2.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/tacas-espumante.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-hidro-mulher.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-mesa-tv.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/banheiro-hidro.jpg" alt="" loading="lazy" width="200" height="120" decoding="async">
+                    <img src="images/suite-cama-luz-verde.jpg" alt="Suíte Verde" loading="lazy" width="200" height="120" decoding="async">
                 </div>
             </div>
         </div>
