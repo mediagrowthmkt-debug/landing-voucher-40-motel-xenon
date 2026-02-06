@@ -494,6 +494,12 @@ body {
         font-size: 1.4rem;
     }
     
+    /* Ajuste fino de fonte mobile */
+    .hero .cta-button span {
+        font-size: 14px;
+        line-height: 13px;
+    }
+    
     .voucher-badge {
         padding: 10px 20px;
         margin-top: 18px; /* AUMENTADO */
@@ -534,6 +540,13 @@ body {
     .hero .voucher-badge {
         position: relative;
         top: -103px;
+    }
+}
+
+/* Ajuste de fonte para tablets e desktops */
+@media (min-width: 481px) {
+    .hero .cta-button span {
+        font-size: 17px;
     }
 }
 
