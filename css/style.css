@@ -57,12 +57,14 @@ body {
     backdrop-filter: blur(10px);
     padding: 15px 0;
     border-bottom: 1px solid rgba(217, 21, 24, 0.3);
+    min-height: 80px;
 }
 
 .header .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 50px;
 }
 
 .logo {
@@ -127,6 +129,7 @@ body {
     overflow: hidden;
     padding: 10px 0;
     background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.3), transparent);
+    min-height: 140px; /* Altura mínima para evitar sobreposição com botão */
 }
 
 .hero-marquee {
@@ -182,6 +185,8 @@ body {
     padding: 0 20px;
     max-width: 800px;
     margin: 0 auto;
+    margin-top: 80px; /* Espaço para o header */
+    margin-bottom: 140px; /* Espaço para o marquee */
 }
 
 /* ============================================
@@ -196,6 +201,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.95;
+    padding-top: 20px; /* Espaço adicional do header */
 }
 
 /* ============================================
@@ -212,6 +218,7 @@ body {
     margin-bottom: 40px;
     box-shadow: 0 0 30px rgba(217, 21, 24, 0.5);
     animation: pulse-glow 2s ease-in-out infinite;
+    margin-top: 15px; /* Espaço do texto "Motel em Criciúma" */
 }
 
 .voucher-text {
@@ -251,6 +258,8 @@ body {
     box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: 10px; /* Espaço do voucher badge */
+    min-height: 60px; /* Altura mínima para manter espaço do marquee */
 }
 
 .cta-button:hover {
@@ -397,12 +406,15 @@ body {
     .hero-location {
         font-size: 1.8rem;
         margin-bottom: 15px;
+        padding-top: 15px;
     }
     
     .cta-button {
         padding: 18px 30px;
         font-size: 1.6rem;
         gap: 10px;
+        margin-top: 8px;
+        min-height: 55px;
     }
     
     .whatsapp-icon {
@@ -413,6 +425,7 @@ body {
     .voucher-badge {
         padding: 12px 24px;
         margin-bottom: 30px;
+        margin-top: 12px;
     }
     
     .voucher-text {
@@ -431,6 +444,7 @@ body {
     .hero-marquee-container {
         bottom: 70px !important;
         padding: 8px 0;
+        min-height: 110px;
     }
     
     .hero-marquee-track {
@@ -465,6 +479,12 @@ body {
     .hero-location {
         font-size: 1.6rem;
         letter-spacing: 1px;
+        padding-top: 12px;
+    }
+    
+    .cta-button {
+        margin-top: 6px;
+        min-height: 50px;
     }
     
     .cta-button span {
@@ -473,6 +493,7 @@ body {
     
     .voucher-badge {
         padding: 10px 20px;
+        margin-top: 10px;
     }
     
     .voucher-text {
@@ -482,6 +503,7 @@ body {
     /* Marquee small mobile */
     .hero-marquee-container {
         bottom: 65px !important;
+        min-height: 95px;
     }
     
     .hero-marquee-track img {
