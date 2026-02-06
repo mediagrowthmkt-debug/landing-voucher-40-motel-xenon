@@ -443,6 +443,22 @@ body {
         height: 90px;
         border-radius: 6px;
     }
+    
+    /* Posicionamento mobile/tablet */
+    .hero p {
+        position: relative;
+        top: -200px;
+    }
+    
+    .hero .voucher-badge {
+        position: relative;
+        top: -200px;
+    }
+    
+    .hero .cta-button {
+        position: relative;
+        top: 123px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -475,6 +491,22 @@ body {
     
     .hero-marquee-track {
         animation-duration: 35s;
+    }
+    
+    /* Posicionamento small mobile */
+    .hero p {
+        position: relative;
+        top: -200px;
+    }
+    
+    .hero .voucher-badge {
+        position: relative;
+        top: -200px;
+    }
+    
+    .hero .cta-button {
+        position: relative;
+        top: 123px;
     }
 }
 
