@@ -3,7 +3,7 @@
 // ============================================
 
 const WHATSAPP_NUMBER = '554884688350';
-const VOUCHER_MESSAGE = `Olá! Vi a oferta do voucher de R$40 para consumo e gostaria de fazer uma reserva no Motel Xenon! 🎁`;
+const VOUCHER_MESSAGE = `Olá! Vi a oferta do voucher de R$40 para consumo e gostaria de fazer uma reserva no Motel Xenon! 🎁 Vim pelo Google`;
 
 // ============================================
 // REDIRECT TO WHATSAPP
