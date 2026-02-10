@@ -12,12 +12,25 @@ const VOUCHER_MESSAGE = `Olá! Vi a oferta do voucher de R$40 para consumo e gos
 function redirectToWhatsApp() {
     const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(VOUCHER_MESSAGE)}`;
     
-    // Google Analytics Conversion Tracking
-    if (typeof gtag_report_conversion === 'function') {
-        gtag_report_conversion(whatsappURL);
-    } else {
-        window.open(whatsappURL, '_blank');
+    // Dispara ambos os eventos de conversão do Google Ads
+    if (typeof gtag === 'function') {
+        // Conversão original da LP
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17435400574/kArdCMPH8MobEP6y7PlA',
+            'value': 1.0,
+            'currency': 'BRL'
+        });
+        
+        // Conversão de Contato WPP LP PROMO
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17435400574/HY3-CKSZ8_UbEP6y7PlA',
+            'value': 1.0,
+            'currency': 'BRL'
+        });
     }
+    
+    // Redireciona para WhatsApp
+    window.open(whatsappURL, '_blank');
 }
 
 // ============================================
