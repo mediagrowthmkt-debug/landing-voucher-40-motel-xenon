@@ -57,22 +57,13 @@
       // DataLayer e gtag disponíveis imediatamente
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      
-      // Conversão original da LP
-      function gtag_report_conversion(url) {
-        var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
-          }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17435400574/kArdCMPH8MobEP6y7PlA',
-            'value': 1.0,
-            'currency': 'BRL',
-            'event_callback': callback
-        });
-        return false;
-      }
+
+      gtag('consent', 'default', {
+        'ad_storage': 'granted',
+        'ad_user_data': 'granted',
+        'ad_personalization': 'granted',
+        'analytics_storage': 'granted'
+      });
       
       // Conversão de Contato WPP LP PROMO
       function gtag_report_conversion_wpp(url) {
@@ -100,6 +91,7 @@
         s.onload = function() {
           gtag('js', new Date());
           gtag('config', 'AW-17435400574');
+          gtag('config', 'G-7B7G22EGDY');
         };
         document.head.appendChild(s);
       }

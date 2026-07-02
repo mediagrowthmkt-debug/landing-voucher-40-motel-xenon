@@ -12,15 +12,8 @@ const VOUCHER_MESSAGE = `Olá! Vim pela campanha da Copa do Motel Xenon e quero 
 function redirectToWhatsApp() {
     const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(VOUCHER_MESSAGE)}`;
     
-    // Dispara ambos os eventos de conversão do Google Ads
+    // Dispara a conversão dedicada de WhatsApp no Google Ads
     if (typeof gtag === 'function') {
-        // Conversão original da LP
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17435400574/kArdCMPH8MobEP6y7PlA',
-            'value': 1.0,
-            'currency': 'BRL'
-        });
-        
         // Conversão de Contato WPP LP PROMO
         gtag('event', 'conversion', {
             'send_to': 'AW-17435400574/HY3-CKSZ8_UbEP6y7PlA',
